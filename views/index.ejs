@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Our Messages</h1>
+  <ul>
+    <%for(message of messages){%>
+      <li><%=message.user%>:<%=message.text%>(<%=message.added%>)</li>
+      <%}%>
+  </ul>
+  <button><a href="/new">Post New Message</a></button>
+</body>
+</html>
